@@ -1,0 +1,61 @@
+/* SCSS RGB */
+* {
+  background: rgb(169, 251, 167);
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 500px;
+  padding-top: 0px;
+  margin-top: 0px;
+  background-color: rgb(75, 37, 111);
+  box-shadow: 0px 4px 0px 0px rgba(71, 31, 62, 0.2);
+}
+.navbar__item {
+  background-color: rgb(75, 37, 111);
+  color: rgb(127, 217, 109);
+}
+.navbar__item:hover {
+  color: rgb(136, 161, 190);
+}
+
+.Home {
+  height: 500px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.Home__header2 {
+  display: flex;
+  justify-content: right;
+}
+
+.About {
+  height: 500px;
+  text-align: left;
+}
+.Skills__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Skills__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.Skills__icon {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.Skills__label {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
