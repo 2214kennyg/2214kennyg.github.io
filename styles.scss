@@ -29,11 +29,13 @@
 .Home {
     height: 500px;
     width: auto;
-    display: flex;
+    // display: flex;
 
-    align-items: center;
-    justify-content: right;
+    // align-items: center;
+    // justify-content: right;
     &__header {
+        display: flex;
+        justify-content: right;
     }
     &__header2 {
         display: flex;
@@ -72,6 +74,7 @@
         font-size: 20px;
         display: flex;
         align-items: center;
+        color: $tekhelet;
     }
     // @media only screen and {
     //   display: flex;
@@ -85,4 +88,12 @@
 }
 
 .Contact {
+    &__header {
+    }
+    &__links {
+        color: $air-superiority-blue;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

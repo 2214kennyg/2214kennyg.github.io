@@ -25,8 +25,9 @@
 .Home {
   height: 500px;
   width: auto;
+}
+.Home__header {
   display: flex;
-  align-items: center;
   justify-content: right;
 }
 .Home__header2 {
@@ -58,4 +59,12 @@
   font-size: 20px;
   display: flex;
   align-items: center;
+  color: rgb(75, 37, 111);
+}
+
+.Contact__links {
+  color: rgb(136, 161, 190);
+}
+.Contact__links:hover {
+  text-decoration: underline;
 }
