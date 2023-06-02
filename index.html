@@ -24,7 +24,7 @@
                         <a href="#Projects" class="navbar__item">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact" class="navbar__item">Contact</a>
+                        <a href="#Contact" class="navbar__item">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -38,15 +38,22 @@
                 </h2>
             </section>
             <section class="About" id="About">
-                <h1 class="About__header">About Me</h1>
-                <p class="About__para">
-                    I'm a former psychology student, now turned aspiring
-                    software engineer. I've always enjoyed optimising things,
-                    and coding is the perfect way to explore that.
-                    <br />
-                    Aside from coding, I'm passionate about dance, working at
-                    ice and inline skating, and stories of all kinds.
-                </p>
+                <div class="About__content">
+                    <h1 class="About__header">About Me</h1>
+                    <p class="About__para">
+                        I'm a former psychology student, now turned aspiring
+                        software engineer. I've always enjoyed optimising
+                        things, and coding is the perfect way to explore that.
+                        <br />
+                        Aside from coding, I'm passionate about dance, working
+                        at ice and inline skating, and stories of all kinds.
+                    </p>
+                </div>
+                <img
+                    class="About__image"
+                    src="./images/IMG_20230420_130418 2.jpg"
+                    alt="profile picture"
+                />
             </section>
             <section class="Skills" id="Skills">
                 <h1 class="Skills__header">Skills</h1>
@@ -63,27 +70,125 @@
                     <i class="devicon-javascript-plain Skills__icon"
                         ><p class="Skills__label">Javascript</p></i
                     >
-                    <i class="devicon-git-plain-wordmark Skills__icon">
-                        <p class="Skills__label">git</p></i
+                    <i class="devicon-react-original-wordmark Skills__icon">
+                        <p class="Skills__label">React</p></i
+                    >
+                    <i class="devicon-java-plain-wordmark Skills__icon"
+                        ><p class="Skills__label">Java</p></i
+                    >
+                    <i class="devicon-firebase-plain Skills__icon">
+                        <p class="Skills__label">Firebase</p>
+                    </i>
+                    <i class="devicon-mysql-plain Skills__icon"
+                        ><p class="Skills__label">MySQL</p></i
+                    >
+                    <i class="devicon-nextjs-original Skills__icon">
+                        <p class="Skills__label">NextJS</p>
+                    </i>
+                    <i class="devicon-spring-plain Skills__icon"
+                        ><p class="Skills__label">Spring</p></i
                     >
                 </div>
             </section>
+
             <section class="Projects" id="Projects">
                 <h1 class="Projects__header">Past Projects</h1>
+                <div class="Projects__content">
+                    <div class="Projects__item">
+                        <img
+                            class="Projects__item__image"
+                            src="./images/Fake-OS.jpg"
+                            alt=""
+                        />
+                        <h3>Fake Windows XP</h3>
+                        <h3>Javascript, SCSS, HTML</h3>
+                        <a href=""
+                            ><i
+                                class="devicon-github-original Projects__item__icon"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="Projects__item">
+                        <img
+                            class="Projects__item__image"
+                            src="./images/Morse-Translator.jpg"
+                            alt=""
+                        />
+                        <h3>Morse Code Translator</h3>
+                        <h3>Javascript, SCSS, HTML</h3>
+                        <a href=""
+                            ><i
+                                class="devicon-github-original Projects__item__icon"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="Projects__item">
+                        <img
+                            class="Projects__item__image"
+                            src="./images/Google-Books.jpg"
+                            alt=""
+                        />
+                        <h3>Google Books API Search Engine</h3>
+                        <h3>Javascript, SCSS, HTML</h3>
+                        <a href=""
+                            ><i
+                                class="devicon-github-original Projects__item__icon"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="Projects__item">
+                        <img
+                            class="Projects__item__image"
+                            src="./images/E-Shop.jpg"
+                            alt=""
+                        />
+                        <h3>E-Shop for Books</h3>
+                        <h3>React, SCSS</h3>
+                        <a href=""
+                            ><i
+                                class="devicon-github-original Projects__item__icon"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="Projects__item">
+                        <img
+                            class="Projects__item__image"
+                            src="./images/Minesweeper.jpg"
+                            alt=""
+                        />
+                        <h3>Minesweeper CLI Game</h3>
+                        <h3>Java</h3>
+                        <a href=""
+                            ><i
+                                class="devicon-github-original Projects__item__icon"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Contact" id="Contact">
+                <h1 class="Contact__header">Contact</h1>
+                <div class="Contact__content">
+                    <a href="mailto:2214kennyg@gmail.com" class="Contact__links"
+                        >2214kennyg@gmail.com</a
+                    >
+                    <i class="devicon-linkedin-plain">
+                        <a
+                            href="https://www.linkedin.com/in/kenneth-yu-5660a5129/"
+                            class="Contact__links"
+                            >@KennethYu</a
+                        >
+                    </i>
+                    <i class="devicon-github-original">
+                        <a
+                            href="https://github.com/2214kennyg"
+                            class="Contact__links"
+                            >@2214kennyg</a
+                        >
+                    </i>
+                </div>
             </section>
         </main>
-
-        <footer>
-            <section class="contact" id="contact">
-                <h1 class="contact__header">Contact</h1>
-                <a href="mailto:2214kennyg@gmail.com" class="contact__links"
-                    >2214kennyg@gmail.com</a
-                >
-                <a href="" class="contact__links">@KennethYu</a>
-                <a href="https://github.com/2214kennyg" class="contact__links"
-                    >@2214kennyg</a
-                >
-            </section>
-        </footer>
     </body>
 </html>

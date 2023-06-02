@@ -3,8 +3,17 @@
 //     font-family: ;
 //     color: ;
 // }
-* {
-    background: $light-green;
+// * {
+//     background: $light-green;
+// }
+
+body {
+    margin: 0px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
 }
 
 .navbar {
@@ -13,13 +22,15 @@
     justify-content: space-around;
     align-items: center;
     padding-left: 500px;
-    padding-top: 0px;
+    position: sticky;
+    // padding-top: 0px;
     margin-top: 0px;
-    background-color: $tekhelet;
-    box-shadow: 0px 4px 0px 0px rgba(71, 31, 62, 0.2);
+    // background-color: $tekhelet;
+    // box-shadow: 0px 4px 0px 0px rgba(71, 31, 62, 0.2);
     &__item {
-        background-color: $tekhelet;
-        color: $mantis;
+        // background-color: $tekhelet;
+        color: $air-superiority-blue;
+        font-weight: bold;
         &:hover {
             color: $air-superiority-blue;
         }
@@ -27,43 +38,67 @@
 }
 
 .Home {
-    height: 500px;
+    height: 600px;
     width: auto;
-    // display: flex;
-
-    // align-items: center;
-    // justify-content: right;
+    background-color: $light-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px;
     &__header {
-        display: flex;
-        justify-content: right;
+        font-size: xx-large;
+        margin: 0px;
+        color: $tekhelet;
     }
     &__header2 {
-        display: flex;
-        justify-content: right;
+        font-size: x-large;
+        color: $tekhelet;
     }
 }
 
 .About {
-    height: 500px;
-    text-align: left;
-
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $dark-purple;
+    padding: 40px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
     &__header {
+        color: $mantis;
+        margin-top: 0px;
     }
     &__para {
+        font-size: larger;
+        color: $mantis;
+    }
+    &__image {
+        height: 210px;
+        width: 170px;
     }
 }
 
 .Skills {
+    background-color: $light-green;
+    padding: 40px;
     &__header {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $tekhelet;
+        margin-top: 0px;
     }
     &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        color: $tekhelet;
+        padding: 20px 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
+        justify-items: center;
     }
     &__icon {
         font-size: 40px;
@@ -72,28 +107,68 @@
     }
     &__label {
         font-size: 20px;
-        display: flex;
-        align-items: center;
+        padding: 5px;
         color: $tekhelet;
     }
-    // @media only screen and {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    // }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+    .Skills {
+        &__content {
+            padding: 20px 400px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .Skills {
+        &__content {
+            padding: 20px 250px;
+        }
+    }
 }
 
 .Projects {
+    background-color: $dark-purple;
+    padding: 40px;
     &__header {
+        margin-top: 0px;
+        color: $mantis;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    &__item {
+        color: $mantis;
+        padding: 40px 40px 0px 0px;
+        &__image {
+            max-height: 250px;
+        }
+        &__icon {
+            color: $mantis;
+        }
     }
 }
 
 .Contact {
+    background-color: $light-green;
     &__header {
+        margin-top: 0px;
+        text-align: center;
+        color: $tekhelet;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
     }
     &__links {
         color: $air-superiority-blue;
+
         &:hover {
-            text-decoration: underline;
+            font-weight: bold;
         }
     }
 }

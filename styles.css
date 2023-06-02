@@ -1,6 +1,12 @@
 /* SCSS RGB */
-* {
-  background: rgb(169, 251, 167);
+body {
+  margin: 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 .navbar {
@@ -9,46 +15,80 @@
   justify-content: space-around;
   align-items: center;
   padding-left: 500px;
-  padding-top: 0px;
+  position: sticky;
   margin-top: 0px;
-  background-color: rgb(75, 37, 111);
-  box-shadow: 0px 4px 0px 0px rgba(71, 31, 62, 0.2);
 }
 .navbar__item {
-  background-color: rgb(75, 37, 111);
-  color: rgb(127, 217, 109);
+  color: rgb(136, 161, 190);
+  font-weight: bold;
 }
 .navbar__item:hover {
   color: rgb(136, 161, 190);
 }
 
 .Home {
-  height: 500px;
+  height: 600px;
   width: auto;
+  background-color: rgb(169, 251, 167);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px;
 }
 .Home__header {
-  display: flex;
-  justify-content: right;
+  font-size: xx-large;
+  margin: 0px;
+  color: rgb(75, 37, 111);
 }
 .Home__header2 {
-  display: flex;
-  justify-content: right;
+  font-size: x-large;
+  color: rgb(75, 37, 111);
 }
 
 .About {
-  height: 500px;
-  text-align: left;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(71, 31, 62);
+  padding: 40px;
+}
+.About__content {
+  display: flex;
+  flex-direction: column;
+}
+.About__header {
+  color: rgb(127, 217, 109);
+  margin-top: 0px;
+}
+.About__para {
+  font-size: larger;
+  color: rgb(127, 217, 109);
+}
+.About__image {
+  height: 210px;
+  width: 170px;
+}
+
+.Skills {
+  background-color: rgb(169, 251, 167);
+  padding: 40px;
 }
 .Skills__header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(75, 37, 111);
+  margin-top: 0px;
 }
 .Skills__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  color: rgb(75, 37, 111);
+  padding: 20px 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  justify-items: center;
 }
 .Skills__icon {
   font-size: 40px;
@@ -57,14 +97,60 @@
 }
 .Skills__label {
   font-size: 20px;
-  display: flex;
-  align-items: center;
+  padding: 5px;
   color: rgb(75, 37, 111);
 }
 
+@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+  .Skills__content {
+    padding: 20px 400px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .Skills__content {
+    padding: 20px 250px;
+  }
+}
+.Projects {
+  background-color: rgb(71, 31, 62);
+  padding: 40px;
+}
+.Projects__header {
+  margin-top: 0px;
+  color: rgb(127, 217, 109);
+}
+.Projects__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Projects__item {
+  color: rgb(127, 217, 109);
+  padding: 40px 40px 0px 0px;
+}
+.Projects__item__image {
+  max-height: 250px;
+}
+.Projects__item__icon {
+  color: rgb(127, 217, 109);
+}
+
+.Contact {
+  background-color: rgb(169, 251, 167);
+}
+.Contact__header {
+  margin-top: 0px;
+  text-align: center;
+  color: rgb(75, 37, 111);
+}
+.Contact__content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
 .Contact__links {
   color: rgb(136, 161, 190);
 }
 .Contact__links:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
