@@ -136,6 +136,7 @@ header {
 .Projects {
     background-color: $dark-purple;
     padding: 40px;
+
     &__header {
         text-align: center;
         margin-top: 0px;
@@ -146,6 +147,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        color: $mantis;
     }
     &__item {
         color: $mantis;
@@ -155,6 +157,7 @@ header {
         }
         &__icon {
             color: $mantis;
+            padding-right: 5px;
         }
     }
 }

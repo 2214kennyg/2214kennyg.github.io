@@ -127,6 +127,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  color: rgb(127, 217, 109);
 }
 .Projects__item {
   color: rgb(127, 217, 109);
@@ -137,6 +138,7 @@ header {
 }
 .Projects__item__icon {
   color: rgb(127, 217, 109);
+  padding-right: 5px;
 }
 
 .Contact {
