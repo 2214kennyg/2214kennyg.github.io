@@ -57,10 +57,12 @@ header {
 .About__content {
   display: flex;
   flex-direction: column;
+  padding-right: 40px;
 }
 .About__header {
   color: rgb(127, 217, 109);
   margin-top: 0px;
+  text-decoration: underline;
 }
 .About__para {
   font-size: larger;
@@ -69,6 +71,7 @@ header {
 .About__image {
   height: 210px;
   width: 170px;
+  padding-right: 40px;
 }
 
 .Skills {
@@ -76,11 +79,10 @@ header {
   padding: 40px;
 }
 .Skills__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: rgb(75, 37, 111);
   margin-top: 0px;
+  text-decoration: underline;
 }
 .Skills__content {
   color: rgb(75, 37, 111);
@@ -116,8 +118,10 @@ header {
   padding: 40px;
 }
 .Projects__header {
+  text-align: center;
   margin-top: 0px;
   color: rgb(127, 217, 109);
+  text-decoration: underline;
 }
 .Projects__content {
   display: flex;
@@ -142,6 +146,7 @@ header {
   margin-top: 0px;
   text-align: center;
   color: rgb(75, 37, 111);
+  text-decoration: underline;
 }
 .Contact__content {
   display: flex;

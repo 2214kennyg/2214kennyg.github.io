@@ -67,10 +67,12 @@ header {
     &__content {
         display: flex;
         flex-direction: column;
+        padding-right: 40px;
     }
     &__header {
         color: $mantis;
         margin-top: 0px;
+        text-decoration: underline;
     }
     &__para {
         font-size: larger;
@@ -79,6 +81,7 @@ header {
     &__image {
         height: 210px;
         width: 170px;
+        padding-right: 40px;
     }
 }
 
@@ -86,11 +89,13 @@ header {
     background-color: $light-green;
     padding: 40px;
     &__header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-align: center;
         color: $tekhelet;
         margin-top: 0px;
+        text-decoration: underline;
     }
     &__content {
         color: $tekhelet;
@@ -132,8 +137,10 @@ header {
     background-color: $dark-purple;
     padding: 40px;
     &__header {
+        text-align: center;
         margin-top: 0px;
         color: $mantis;
+        text-decoration: underline;
     }
     &__content {
         display: flex;
@@ -158,6 +165,7 @@ header {
         margin-top: 0px;
         text-align: center;
         color: $tekhelet;
+        text-decoration: underline;
     }
     &__content {
         display: flex;
